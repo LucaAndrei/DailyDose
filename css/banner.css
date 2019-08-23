@@ -1,0 +1,40 @@
+.dd-banner {
+    background-image: url(https://barista.edge-themes.com/wp-content/uploads/2017/01/shop-home-grid-img.jpg?id=12748);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.dd-banner .dd-banner-text-holder{
+    -webkit-transition:background-color .25s cubic-bezier(.45,.05,.55,.95),all .25s ease-out;
+    -moz-transition:background-color .25s cubic-bezier(.45,.05,.55,.95),all .25s ease-out;
+    transition:background-color .25s cubic-bezier(.45,.05,.55,.95),all .25s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%
+}
+
+.dd-banner .dd-banner-text-holder .dd-banner-read-more{
+    color: #FFFFFF;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+.dd-banner .dd-banner-text-holder .dd-banner-read-more span{
+    margin-left:5px;
+    -webkit-transition:transform .3s ease;
+    -moz-transition:transform .3s ease;
+    transition:transform .3s ease;
+}
+
+.dd-banner:hover .dd-banner-read-more span{
+    -webkit-transform:translateX(5px);
+    -moz-transform:translateX(5px);
+    transform:translateX(5px)
+}
+
+.dd-banner:hover .dd-banner-text-holder{
+    background-color:rgba(48,39,28,.1)
+}

@@ -1,0 +1,44 @@
+.dd-top-bar {
+    color:#D6D6D6;
+    height:calc(80px + 2rem);
+    background-color: rgba(48, 39, 28, 1);
+}
+.dd-top-bar a {
+    color:#D6D6D6;
+}
+.dd-top-bar a:hover {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.dd-top-bar .widget {
+    margin-right:22px;
+    padding-right:22px;
+    position:relative;
+    font-size:12px
+}
+.dd-top-bar .widget:before {
+    position:absolute;
+    border-right:1px solid #888;
+    height:15px;
+    content:'';
+    width:1px;
+    right:0;
+}
+.dd-top-bar .widget:last-child {
+    border:0;
+    padding-right:0;
+    margin-right:0
+}
+.dd-top-bar .widget:last-child:before {
+    border-right:0
+}
+.dd-top-bar .img-logo {
+    width: 100px;
+}
+
+@media (min-width: 992px) {
+    .dd-top-bar .img-logo {
+        position: absolute;
+        right: 50%;
+    }
+}

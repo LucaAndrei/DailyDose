@@ -1,0 +1,132 @@
+.slidescss{
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.carousel-item {
+    -webkit-background-attachment: fixed!important;
+    -moz-background-attachment: fixed!important;
+    background-attachment: fixed!important;
+    background-position: center top!important;
+}
+
+#mainCarousel {
+    height:800px;
+}
+
+.carousel-caption {
+    top: 15%;
+}
+.carousel-caption-text {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: Oswald;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.carousel-caption-subtext {
+    font-size: 1.5rem;
+    font-family: Merriweather;
+    font-style: italic;
+    text-align: left;
+    min-width: 330px;
+    max-width: 330px;
+}
+
+.green {
+    color: rgb(0, 94, 32);
+}
+.brown {
+    color :rgb(49, 42, 38);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+    font-size: 3rem;
+    margin: -3rem;
+    -webkit-transition:transform .3s ease;
+    -moz-transition:transform .3s ease;
+    transition:transform .3s ease;
+}
+
+.dd-banner .dd-banner-text-holder .dd-banner-read-more span{
+    margin-left:5px;
+    -webkit-transition:transform .3s ease;
+    -moz-transition:transform .3s ease;
+    transition:transform .3s ease;
+}
+
+.carousel-control-prev:hover {
+    -webkit-transform:translateX(-10px);
+    -moz-transform:translateX(-10px);
+    transform:translateX(-10px);
+}
+.carousel-control-next:hover {
+    -webkit-transform:translateX(10px);
+    -moz-transform:translateX(10px);
+    transform:translateX(10px);
+}
+
+@media (min-width: 992px) {
+    .carousel-caption-text {
+        font-size: 7rem;
+    }
+    .carousel-caption-subtext {
+        min-width: 410px;
+        max-width: 410px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: flex;
+    }
+}
+
+.swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.swiper-slide a:hover .image .overlay {
+    opacity: 1;
+}
+.swiper-slide a .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.swiper-slide a .image .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.swiper-slide a .image .overlay em {
+    color: #fff;
+    font-size: 26px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+}
